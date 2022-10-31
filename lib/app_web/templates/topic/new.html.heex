@@ -1,0 +1,3 @@
+<%= form_for @changeset, Routes.topic_path(@conn, :create), fn f -> %>
+<label> Name: <%= text_input f, :title %> </label>
+<%= error_tag f, :title %> <%= submit "Submit" %> <% end %>
